@@ -79,6 +79,25 @@
       color: #0f172a;
     }
 
+    .btn-email {
+      background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+      color: #0f172a;
+      border: none;
+      padding: 12px 25px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4);
+      transition: all 0.3s ease;
+      margin-top: 15px;
+    }
+
+    .btn-email:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(56, 189, 248, 0.6);
+      color: #fff;
+    }
+
     .photo {
       width: 140px;
       height: 140px;
@@ -93,22 +112,43 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      margin-top: 30px;
-      max-width: 900px;   /* mesma largura da seção sobre */
-      margin-left: auto;
-      margin-right: auto;
-      text-align: left;
-      }
+      max-width: 900px;
+      margin: 30px auto 0;
+    }
 
     .card {
       background: #1e293b;
       padding: 20px;
       border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 280px;
       transition: 0.3s;
     }
 
     .card:hover {
       transform: translateY(-5px);
+    }
+
+    .card h3,
+    .card p {
+      text-align: center;
+    }
+
+    .card p {
+      flex-grow: 1;
+    }
+
+    .card .btn {
+      align-self: center;
+      margin-top: 15px;
+    }
+
+    .email-text {
+      font-size: 1.1rem;
+      color: #94a3b8;
+      margin-bottom: 15px;
     }
 
     footer {
@@ -150,31 +190,31 @@
     <h2>🚀 Projetos</h2>
     <div class="projects">
       <div class="card">
-        <h3>API - CRUD Projetos</h3>
-        <p>Aplicação Node.js + SQLite com operações de criação, leitura, atualização e exclusão de projetos.</p>
+        <h3>CRUD de Projetos</h3>
+        <p>Aplicação Node.js + SQLite com operações de criação, leitura, atualização e exclusão de projetos, demonstrando habilidades em back-end e manipulação de banco de dados.</p>
         <a href="https://github.com/dluan97/crud-teste" target="_blank" class="btn">Ver no GitHub</a>
       </div>
 
       <div class="card">
         <h3>Landing Page Freelancer</h3>
-        <p>Página moderna desenvolvida com HTML, CSS e JavaScript, integrada ao backend via API.</p>
+        <p>Página moderna desenvolvida com HTML, CSS e JavaScript, integrada ao backend via API, mostrando design responsivo e interatividade com o usuário.</p>
         <a href="https://langing-free-lancer.vercel.app/" target="_blank" class="btn">Ver projeto</a>
       </div>
 
       <div class="card">
         <h3>Jogo Número Secreto</h3>
-        <p>Projeto interativo em JavaScript que desafia o usuário a adivinhar um número secreto. Demonstra habilidade em lógica de programação, manipulação do Dom, controle de fluxo e experiência do usuário.</p>
+        <p>Projeto interativo em JavaScript que desafia o usuário a adivinhar um número secreto. Demonstra lógica de programação, manipulação do DOM, controle de fluxo e experiência do usuário.</p>
         <a href="https://github.com/Dluan97/jogo-numero-secreto" target="_blank" class="btn">Ver no GitHub</a>
       </div>
+    </div>
   </section>
 
-<section id="contato">
-  <h2>📬 Contato</h2>
-  <p>Entre em contato comigo para oportunidades ou colaborações!</p>
-  <p class="email-text">Email: <a href="mailto:dluanlopes9@gmail.com">dluanlopes9@gmail.com</a></p>
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dluanlopes9@gmail.com" target="_blank" class="btn btn-email">Enviar e-mail</a>
-</section>
-
+  <section id="contato">
+    <h2>📬 Contato</h2>
+    <p>Entre em contato comigo para oportunidades ou colaborações!</p>
+    <p class="email-text">Email: <a href="mailto:dluanlopes9@gmail.com">dluanlopes9@gmail.com</a></p>
+    <a href="mailto:dluanlopes9@gmail.com" class="btn-email">Enviar e-mail</a>
+  </section>
 
   <footer>
     <p>© 2025 Dluan Lopes — Engenheiro de Software em formação</p>
