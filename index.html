@@ -69,7 +69,7 @@
       border: 2px solid #38bdf8;
       padding: 10px 20px;
       border-radius: 8px;
-      margin-top: 20px;
+      margin: 10px;
       text-decoration: none;
       transition: 0.3s;
     }
@@ -77,6 +77,16 @@
     .btn:hover {
       background: #38bdf8;
       color: #0f172a;
+    }
+
+    .photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #38bdf8;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
     }
 
     .projects {
@@ -117,10 +127,14 @@
   </header>
 
   <section id="home">
+    <img src="minha-foto.jpg" alt="Foto de Dluan Lopes" class="photo">
     <h1>👋 Olá, eu sou o Dluan Lopes</h1>
     <p>Sou engenheiro de software em formação, estudando e praticando com criação de aplicativos web e APIs CRUD de demonstração.</p>
     <p>Gosto de aprender e construir projetos reais para evoluir minhas habilidades em front-end e back-end.</p>
-    <a href="https://github.com/dluan97" target="_blank" class="btn">Meu GitHub</a>
+    <div>
+      <a href="https://github.com/dluan97" target="_blank" class="btn">GitHub</a>
+      <a href="https://www.linkedin.com/in/lopes-dluan/" target="_blank" class="btn">LinkedIn</a>
+    </div>
   </section>
 
   <section id="sobre">
